@@ -21,7 +21,6 @@ public void test() throws MalformedURLException, InterruptedException {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"10.0");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"RealDevice");//adb devices
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2");
-        capabilities.setCapability(MobileCapabilityType.APP,"C:\\mobile_Testing_TestNG\\src\\Apps\\Calculator.apk");
         capabilities.setCapability("appPackage","com.android.chrome");
         capabilities.setCapability("appActivity","com.google.android.apps.chrome.Main");
         AndroidDriver<MobileElement>driver=new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);

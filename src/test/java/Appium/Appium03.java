@@ -26,8 +26,6 @@ public class Appium03 {
         capabilities.setCapability("appActivity", "com.davemac327.gesture.tool.GestureBuilderActivity");
         capabilities.setCapability("noReset","true");
 
-
-
         AndroidDriver<MobileElement> driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
         //If the phone is locked, it allows us to open it
