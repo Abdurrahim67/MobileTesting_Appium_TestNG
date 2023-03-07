@@ -3,6 +3,7 @@ package Appium;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.aspectj.weaver.ast.And;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,11 +12,11 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.SQLOutput;
 
-public class Appium10 {
+public class Appium10 extends BaseClass {
 
     @Test
     public void test() throws MalformedURLException, InterruptedException {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+   /*     DesiredCapabilities capabilities = new DesiredCapabilities();
 
 
         capabilities.setCapability(MobileCapabilityType.APPLICATION_NAME, "Android");
@@ -31,6 +32,10 @@ public class Appium10 {
         if (driver.isDeviceLocked()) {
             driver.unlockDevice();
         }
+
+
+    */
+       AndroidDriver driver= getAndroidDriver();
 
         System.out.println("App  installed...");
 
